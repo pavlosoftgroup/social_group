@@ -25,7 +25,7 @@ function social_icons_setting_form($form, &$form_state) {
   $form['setting']['title'] = array(
     '#title' => t('Title'),
     '#type' => 'textfield',
-    '#maxlength' => 15,
+    '#maxlength' => 64,
     '#size' => 15,
     '#required' => TRUE,
     '#atributes' => array('class' => array('link')),
@@ -33,6 +33,7 @@ function social_icons_setting_form($form, &$form_state) {
   $form['setting']['link'] = array(
     '#title' => t('Link'),
     '#type' => 'textfield',
+    '#maxlength' => 124,
     '#required' => TRUE,
 
   );
