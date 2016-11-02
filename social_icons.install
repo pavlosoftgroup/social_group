@@ -1,6 +1,7 @@
 <?php
+
 /**
- *
+ * Implements hook_schema()
  */
 function social_icons_schema() {
   $schema['social_icons'] = array(
@@ -42,4 +43,5 @@ function social_icons_schema() {
       'title' => array('title')
     ),
   );
+  return $schema;
 }
