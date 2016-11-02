@@ -56,3 +56,18 @@ function social_icons_setting_form($form, &$form_state) {
   return $form;
 }
 
+/**
+ * Implements hook_forms_validate().
+ */
+function social_icons_setting_form_validate($form_id, $form_state) {
+  if($form_state['values']['title'] == 'Title'){
+    form_set_error('title', t('"Title" do not validate this form.'));
+  }
+}
+/*
+ * Implements hook_form_submit()
+ */
+function social_icons_setting_form_submit($form, &$form_state) {
+
+}
+
