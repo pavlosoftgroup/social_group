@@ -5,8 +5,8 @@
 function social_icons_schema() {
   $schema['social_icons'] = array(
     'description' => t('Table for Social Icons module'),
-    'fields' =>array(
-      'id' = array(
+    'fields' => array(
+      'id' => array(
         'type' => 'serial',
         'unsigned' => TRUE,
         'not null' => TRUE,
