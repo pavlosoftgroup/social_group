@@ -14,7 +14,9 @@ function social_icons_menu() {
   );
   return $items;
 }
-
+/*
+ * Implements hook_form()
+ */
 function social_icons_setting_form($form, &$form_state) {
   $form['setting'] = array(
     '#title' => t('Add icon'),
